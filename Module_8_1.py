@@ -1,15 +1,9 @@
 
 def add_everything_up(a, b):
     try:
-        sum_ = a + b
-        return sum_
+        return a + b
     except TypeError:
-        if isinstance(a, int) or isinstance(a, float) :
-            a = str(a)
-        else:
-            b = str(b)
-        sum_ = a + b
-        return sum_
+        return str(a) + str(b)
 
 print(add_everything_up(123.456, 'строка'))
 print(add_everything_up('яблоко', 4215))
